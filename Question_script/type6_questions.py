@@ -2,7 +2,7 @@ import json
 import random
 
 def generate_dataset():
-    num_questions = 3000
+    num_questions = 6000
     questions = []
     seen = set()
     

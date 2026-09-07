@@ -14,7 +14,7 @@ def get_range(number):
         return 81, 100
 
 def generate_dataset():
-    num_questions = 3000
+    num_questions = 6000
     questions = []
     seen = set()
     
@@ -63,7 +63,7 @@ def generate_dataset():
 
 if __name__ == "__main__":
     dataset = generate_dataset()
-    output_path = '/home/akib/Desktop/IIT/eduloop/Question_output/type3_questions.json'
+    output_path = '/home/akib/Desktop/IIT/eduloop/Question_output/type3.json'
     
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(dataset, f, indent=2, ensure_ascii=False)

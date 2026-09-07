@@ -2,7 +2,7 @@ import json
 import random
 
 def generate_dataset():
-    num_questions = 3000
+    num_questions = 6000
     questions = []
     seen = set()
     
@@ -10,7 +10,10 @@ def generate_dataset():
         # Select 4 distinct digits from 0 to 9.
         # random.sample also randomizes the order, yielding 10 P 4 = 5040 permutations,
         # which is plenty for 3000 uniquely ordered questions.
-        digits = random.sample(range(10), 4)
+        while True:
+            digits = random.choices(range(10), k=4)
+            if len(set(digits)) >= 3:
+                break
         
         # Use the ordered tuple to ensure this exact sequence of digits hasn't been used
         combination = tuple(digits)

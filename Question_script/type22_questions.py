@@ -39,7 +39,7 @@ def get_time_text_and_expected(h, m):
     return text, expected
 
 def generate_dataset():
-    num_questions = 3000
+    num_questions = 6000
     questions = []
     seen = set()
     

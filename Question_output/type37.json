@@ -1,0 +1,39 @@
+[
+    {
+        "id": "5039",
+        "type": "type36",
+        "subject": "Rekenen",
+        "metadata": {
+            "question": "Vul de verhoudingstabel in.",
+            "hint": "Vermenigvuldig de prijs per stuk met het aantal.",
+            "data": [
+                {
+                    "id": 1,
+                    "item": "cycle",
+                    "topImage": "/images/cycle.png",
+                    "bottomImage": "/images/circle.png",
+                    "costPerUnit": 3,
+                    "answers": [
+                        "6",
+                        "9",
+                        "12"
+                    ],
+                    "numCols": 4
+                },
+                {
+                    "id": 2,
+                    "item": "flower",
+                    "topImage": "/images/flower.png",
+                    "bottomImage": "/images/circle.png",
+                    "costPerUnit": 5,
+                    "answers": [
+                        "10",
+                        "15",
+                        "20"
+                    ],
+                    "numCols": 4
+                }
+            ]
+        }
+    }
+]
